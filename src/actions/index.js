@@ -1,4 +1,4 @@
-export const selectMovie = (movie) => {
+export const selectMovie = movie => {
   return {
     type: 'MOVIE_SELECTED',
     playload: movie

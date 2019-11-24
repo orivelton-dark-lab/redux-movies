@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 import { selectMovie } from '../actions/index';
 
 const MovieList = (props) => {
@@ -23,14 +23,13 @@ const MovieList = (props) => {
 }
 
 const mapStateToProps = state => {
-  const { movies } = state;
   return {
-    movies
+    movies: state.movies
   }
 }
 
 const mapDispatchToProps = {
-  selectMovie
+  selectMovie: selectMovie
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieList);
