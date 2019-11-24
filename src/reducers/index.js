@@ -1,4 +1,4 @@
-import { conbineReducers } from 'redux';
+import { combineReducers } from 'redux';
 
 const moviesReducer = () => {
   return [
